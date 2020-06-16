@@ -8,7 +8,6 @@ import statsmodels.api as sm
 import seaborn as sns
 from datetime import date
 from pandas_datareader import data
-import work as work
 import pandas_datareader.data as web
 import quantstats as qs
 
