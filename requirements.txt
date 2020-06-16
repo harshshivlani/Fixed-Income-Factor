@@ -9,4 +9,3 @@ pandas_datareader
 quantstats
 ipywidgets
 quandl
-webbrowser
