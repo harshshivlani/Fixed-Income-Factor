@@ -1,0 +1,10 @@
+numpy
+pandas
+matplotlib
+yfinance
+statsmodels.api
+seaborn
+datetime
+pandas_datareader
+quantstats
+ipywidgets
