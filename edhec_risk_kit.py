@@ -126,11 +126,11 @@ def compound(r):
     """
     return np.expm1(np.log1p(r).sum())
 
-def semideviation(r):
+def semideviation(r, periods_per_year):
     """
     Returns Downside Deviation i.e. deviation of returns that are negative
     """
-    return r[r<0].std(ddof=0)
+    return r[r<0].std(ddof=0)*(periods_per_year**0.5)
 
 
 def skewness(r):
@@ -247,7 +247,7 @@ def sortino_ratio(r, periods_per_year, rf):
     rf_per_period = (1+rf)**(1/periods_per_year)-1
     excess_return = r - rf_per_period
     ann_excess_ret = annualized_ret(excess_return, periods_per_year)
-    ann_vol = semideviation(r)
+    ann_vol = semideviation(r, periods_per_year)
     return ann_excess_ret/ann_vol
     
 #Lets Define Portfolio Returns & Volatility for a given weight matrix
