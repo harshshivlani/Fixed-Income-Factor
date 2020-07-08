@@ -11,3 +11,4 @@ ipywidgets
 quandl
 xlrd
 voila
+quandl
