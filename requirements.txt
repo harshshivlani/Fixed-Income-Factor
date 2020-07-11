@@ -12,3 +12,4 @@ quandl
 xlrd
 voila
 quandl
+plotly
